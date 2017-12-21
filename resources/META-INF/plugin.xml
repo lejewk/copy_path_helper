@@ -1,0 +1,45 @@
+<idea-plugin>
+  <id>com.devwook.copypathhelper</id>
+  <name>Plugin display name here</name>
+  <version>1.0</version>
+  <vendor email="lejewk@naver.com" url="http://devwook.tistory.com">DEV WOOK</vendor>
+
+  <description><![CDATA[
+      Help your copy path <br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      no changes. <br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <projectService serviceInterface="com.devwook.services.SettingService"
+                    serviceImplementation="com.devwook.services.SettingService"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="CopyPathHelper_Copy" class="com.devwook.actions.CopyPath" text="Copy Path width Helper"
+            description="Copy Path width Helper">
+      <add-to-group group-id="CutCopyPasteGroup" anchor="after" relative-to-action="CopyPaths"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl Q"/>
+    </action>
+    <action id="CopyPathHelper_OpenSetting" class="com.devwook.actions.OpenSetting" text="Copy Path Helper Setting" description="Open Setting">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
