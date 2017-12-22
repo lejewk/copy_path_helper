@@ -1,2 +1,15 @@
-# copy_path_helper
-Help to copy path
+# Copy Path Helper
+Help to copy path.
+
+<ul>
+    <li>Copy in a variety of styles with config your self. </li>
+    <li>Shortcuts : ctrl + shift + Q</li>
+    <li>Copy Eg) /project/domain/Book.php -d 2017</li>
+    <li>Config menu location : Tools > Copy Path Helper Setting</li>
+</ul>
+
+#Changes
+
+#Vendor
+name : devwook <br>
+email : lejewk@naver.com <br>
