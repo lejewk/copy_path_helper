@@ -13,7 +13,7 @@ public class Setting extends JDialog {
 	private JPanel contentPane;
 	private JButton buttonOK;
 	private JButton buttonCancel;
-	private JTextField PATHTextField;
+	private JTextField PathRuleTextField;
 	private SettingService settingService;
 
 	public Setting(Project project) {
@@ -23,12 +23,12 @@ public class Setting extends JDialog {
 		setContentPane(contentPane);
 		setModal(true);
 		getRootPane().setDefaultButton(buttonOK);
+
 		final Toolkit toolkit = Toolkit.getDefaultToolkit();
 		final Dimension screenSize = toolkit.getScreenSize();
 		final int x = (screenSize.width - getWidth()) / 2;
 		final int y = (screenSize.height - getHeight()) / 2;
 		setLocation(x, y);
-
 
 		buttonOK.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -46,7 +46,7 @@ public class Setting extends JDialog {
 		if (pathRule == null || pathRule.isEmpty()) {
 			pathRule = PathRule.DEFAULT;
 		}
-		PATHTextField.setText(pathRule);
+		PathRuleTextField.setText(pathRule);
 
 		// call onCancel() when cross is clicked
 		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -66,14 +66,14 @@ public class Setting extends JDialog {
 
 	private void onOK() {
 		// 저장
-		settingService.pathRule = PATHTextField.getText();
+		settingService.pathRule = PathRuleTextField.getText();
 
 		// add your code here
 		dispose();
 	}
 
 	private void onCancel() {
-		// add your code here if necessar
+		// add your code here if necessary
 		dispose();
 	}
 

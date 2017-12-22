@@ -1,17 +1,15 @@
 <idea-plugin>
-  <id>com.devwook.copypathhelper</id>
-  <name>Plugin display name here</name>
+  <id>com.devwook.copy_path_helper</id>
+  <name>Copy Path Helper</name>
   <version>1.0</version>
   <vendor email="lejewk@naver.com" url="http://devwook.tistory.com">DEV WOOK</vendor>
 
   <description><![CDATA[
-      Help your copy path <br>
-      <em>most HTML tags may be used</em>
+      Help to copy file path.<br>
     ]]></description>
 
   <change-notes><![CDATA[
       no changes. <br>
-      <em>most HTML tags may be used</em>
     ]]>
   </change-notes>
 

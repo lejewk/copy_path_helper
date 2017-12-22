@@ -35,14 +35,16 @@ public class CopyPath extends AnAction {
 
 		final String projetName = project.getName();
 		final VirtualFile file = event.getData(VIRTUAL_FILE);
+		// 파일이 선택되어있지 않는경우
 		if (file == null) {
-			showPopup(event, "<p><b>파일을 선택하여 주세요.</b></p>");
+			showPopup(event, "<p><b>Please select one file.</b></p>");
 			return;
 		}
 
 		final String canonicalPath = file.getCanonicalPath();
+		// 패스가 없는경우
 		if (canonicalPath == null) {
-			showPopup(event, "<p><b>이 파일은 경로가 지정되어 있지 않습니다.</b></p>");
+			showPopup(event, "<p><b>This file does not have a path.</b></p>");
 			return;
 		}
 
@@ -59,8 +61,8 @@ public class CopyPath extends AnAction {
 			pathRule = PathRule.DEFAULT;
 		}
 
+		pathRule = pathRule.replaceAll("\\{FILE\\}", file.getName());
 		pathRule = pathRule.replaceAll("\\{PATH\\}", filePath);
-		pathRule = pathRule.replaceAll("\\{PROJECT_NAME\\}", projetName);
 
 		this.writeTextToClipboard(pathRule);
 	}
