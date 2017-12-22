@@ -8,8 +8,5 @@ Help to copy path.
     <li>Config menu location : Tools > Copy Path Helper Setting</li>
 </ul>
 
-#Changes
-
-#Vendor
-name : devwook <br>
-email : lejewk@naver.com <br>
+<h1>changes </h1>
+none.
