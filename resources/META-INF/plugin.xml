@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.devwook.copy_path_helper</id>
   <name>Copy Path Helper</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="lejewk@naver.com" url="http://devwook.tistory.com">DEV WOOK</vendor>
 
   <description><![CDATA[
@@ -15,7 +15,7 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      no changes. <br>
+      Phpstorm support.<br>
     ]]>
   </change-notes>
 
