@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.devwook.copy_path_helper</id>
   <name>Copy Path Helper</name>
-  <version>1.1</version>
+  <version>1.1.1</version>
   <vendor email="lejewk@naver.com" url="http://devwook.tistory.com">DEV WOOK</vendor>
 
   <description><![CDATA[
@@ -38,8 +38,8 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="CopyPathHelper_Copy" class="com.devwook.actions.CopyPath" text="Copy Path width Helper"
-            description="Copy Path width Helper">
+    <action id="CopyPathHelper_Copy" class="com.devwook.actions.CopyPath" text="Copy Path with Helper"
+            description="Copy Path with Helper">
       <add-to-group group-id="CutCopyPasteGroup" anchor="after" relative-to-action="CopyPaths"/>
       <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl Q"/>
     </action>
