@@ -1,5 +1,4 @@
 # Copy Path Helper
-https://plugins.jetbrains.com/plugin/10304-copy-path-helper
 
 Help to copy path.
 
@@ -9,6 +8,9 @@ Help to copy path.
     <li>Copy Eg) /project/domain/Book.php -d 2017</li>
     <li>Config menu location : Tools > Copy Path Helper Setting</li>
 </ul>
+
+# Example
+![](https://plugins.jetbrains.com/files/10304/screenshot_17711.png)
 
 <h1>changes </h1>
 none.
