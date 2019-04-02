@@ -1,4 +1,6 @@
 # Copy Path Helper
+https://plugins.jetbrains.com/plugin/10304-copy-path-helper
+
 Help to copy path.
 
 <ul>
